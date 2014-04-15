@@ -1,0 +1,2 @@
+D:\Dev\VisualStudioProjects\Ron Studenter\InRonStudenter.Silverlight
+Generated_Code\InRonStudenter.MVCWeb.g.cs
