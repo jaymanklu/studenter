@@ -29,16 +29,22 @@ namespace InRonStudenter.MVCWeb
 
             bundles.Add(new ScriptBundle("~/bundles/jquery-ui").Include(
                     "~/Scripts/jquery-ui-*"
-                );
+                ));
             bundles.Add(new StyleBundle("~/Content/bootstrap-css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/bootstrap-theme.css"));
 
+            bundles.Add(new StyleBundle("~/Content/bootstrap-css-flatly").Include(
+                      "~/Content/bootstrap-flatly.css"
+                ));
             bundles.Add(new StyleBundle("~/Content/MetroUI-bootstrap").Include(
                 "~/metro-css/metro-bootstrap-responsive.min.css",
                 "~/metro-css/metro-bootstrap.min.css",
                 "~/metro-css/iconFont.min.css"
                 ));
+
+            bundles.Add(new StyleBundle("~/Googlefont/lato", "http://fonts.googleapis.com/css?family=Lato").Include());
 
             bundles.Add(new StyleBundle("~/Content/jquery-ui").Include(
                  "~/Content/themes/base/jquery-ui.css"

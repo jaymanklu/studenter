@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace InRonStudenter.ModelLibrary
 {
-    class Event
+    public class Event
     {
+        public int MyProperty { get; set; }
     }
 }

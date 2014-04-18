@@ -5,7 +5,7 @@ using System.Text;
 
 namespace InRonStudenter.ModelLibrary
 {
-    class Project
+    public class Project
     {
     }
 }
