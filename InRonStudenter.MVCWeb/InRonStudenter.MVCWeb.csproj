@@ -69,6 +69,12 @@
       <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Owin, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
@@ -116,6 +122,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Spatial, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.6.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.1.2\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -129,6 +141,12 @@
     <Reference Include="System.Web.Http, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.1.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.1.2\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.5.1.2\lib\net45\System.Web.Http.OData.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Http.WebHost, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -202,11 +220,15 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\StudenterContext.cs" />
+    <Compile Include="Models\StudenterContextInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\BaseAccountViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\InRonStudenter.Silverlight.xap" />
+    <Content Include="Content\bootstrap-cosmo.min.css" />
     <Content Include="Content\bootstrap-flatly.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -275,11 +297,11 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="metro-css\iconFont.min.css" />
-    <Content Include="metro-css\metro-bootstrap-responsive.css" />
-    <Content Include="metro-css\metro-bootstrap-responsive.min.css" />
-    <Content Include="metro-css\metro-bootstrap.css" />
-    <Content Include="metro-css\metro-bootstrap.min.css" />
+    <Content Include="Content\metro-css\iconFont.min.css" />
+    <Content Include="Content\metro-css\metro-bootstrap-responsive.css" />
+    <Content Include="Content\metro-css\metro-bootstrap-responsive.min.css" />
+    <Content Include="Content\metro-css\metro-bootstrap.css" />
+    <Content Include="Content\metro-css\metro-bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\iconFont.dev.svg" />
     <Content Include="fonts\iconFont.svg" />
@@ -288,91 +310,91 @@
     <Content Include="Content\Site.css" />
     <Content Include="InRonStudenter.SilverlightTestPage.aspx" />
     <Content Include="InRonStudenter.SilverlightTestPage.html" />
-    <Content Include="metro-js\metro.min.js" />
-    <Content Include="metro-js\metro\metro-accordion.js" />
-    <Content Include="metro-js\metro\metro-button-set.js" />
-    <Content Include="metro-js\metro\metro-calendar.js" />
-    <Content Include="metro-js\metro\metro-carousel.js" />
-    <Content Include="metro-js\metro\metro-core.js" />
-    <Content Include="metro-js\metro\metro-countdown.js" />
-    <Content Include="metro-js\metro\metro-date-format.js" />
-    <Content Include="metro-js\metro\metro-datepicker.js" />
-    <Content Include="metro-js\metro\metro-dialog.js" />
-    <Content Include="metro-js\metro\metro-drag-tile.js" />
-    <Content Include="metro-js\metro\metro-dropdown.js" />
-    <Content Include="metro-js\metro\metro-fluentmenu.js" />
-    <Content Include="metro-js\metro\metro-global.js" />
-    <Content Include="metro-js\metro\metro-hint.js" />
-    <Content Include="metro-js\metro\metro-initiator.js" />
-    <Content Include="metro-js\metro\metro-input-control.js" />
-    <Content Include="metro-js\metro\metro-listview.js" />
-    <Content Include="metro-js\metro\metro-live-tile.js" />
-    <Content Include="metro-js\metro\metro-loader.js" />
-    <Content Include="metro-js\metro\metro-locale.js" />
-    <Content Include="metro-js\metro\metro-notify.js" />
-    <Content Include="metro-js\metro\metro-panel.js" />
-    <Content Include="metro-js\metro\metro-plugin-template.js" />
-    <Content Include="metro-js\metro\metro-progressbar.js" />
-    <Content Include="metro-js\metro\metro-pull.js" />
-    <Content Include="metro-js\metro\metro-rating.js" />
-    <Content Include="metro-js\metro\metro-scroll.js" />
-    <Content Include="metro-js\metro\metro-slider.js" />
-    <Content Include="metro-js\metro\metro-stepper.js" />
-    <Content Include="metro-js\metro\metro-streamer.js" />
-    <Content Include="metro-js\metro\metro-tab-control.js" />
-    <Content Include="metro-js\metro\metro-table.js" />
-    <Content Include="metro-js\metro\metro-tile-transform.js" />
-    <Content Include="metro-js\metro\metro-times.js" />
-    <Content Include="metro-js\metro\metro-touch-handler.js" />
-    <Content Include="metro-js\metro\metro-treeview.js" />
-    <Content Include="metro-js\metro\metro-wizard.js" />
-    <Content Include="metro-less\wizard.less" />
-    <Content Include="metro-less\window.less" />
-    <Content Include="metro-less\variables.less" />
-    <Content Include="metro-less\utils.less" />
-    <Content Include="metro-less\typography.less" />
-    <Content Include="metro-less\treeview.less" />
-    <Content Include="metro-less\transform.less" />
-    <Content Include="metro-less\tiles.less" />
-    <Content Include="metro-less\tables.less" />
-    <Content Include="metro-less\tab-control.less" />
-    <Content Include="metro-less\streamer.less" />
-    <Content Include="metro-less\stepper.less" />
-    <Content Include="metro-less\slider.less" />
-    <Content Include="metro-less\sidebar.less" />
-    <Content Include="metro-less\scroll.less" />
-    <Content Include="metro-less\reset.less" />
-    <Content Include="metro-less\rating.less" />
-    <Content Include="metro-less\progress-bar.less" />
-    <Content Include="metro-less\panels.less" />
-    <Content Include="metro-less\pagination.less" />
-    <Content Include="metro-less\notify.less" />
-    <Content Include="metro-less\notice.less" />
-    <Content Include="metro-less\navigation-bar.less" />
-    <Content Include="metro-less\misc.less" />
-    <Content Include="metro-less\metro-bootstrap-responsive.less" />
-    <Content Include="metro-less\metro-bootstrap.less" />
-    <Content Include="metro-less\menus.less" />
-    <Content Include="metro-less\lists.less" />
-    <Content Include="metro-less\layout.less" />
-    <Content Include="metro-less\images.less" />
-    <Content Include="metro-less\icons.less" />
-    <Content Include="metro-less\iconFont-content.less" />
-    <Content Include="metro-less\iconFont.less" />
-    <Content Include="metro-less\hint.less" />
-    <Content Include="metro-less\grid.less" />
-    <Content Include="metro-less\funcs.less" />
-    <Content Include="metro-less\forms.less" />
-    <Content Include="metro-less\fluent-menu.less" />
-    <Content Include="metro-less\dataTables.less" />
-    <Content Include="metro-less\countdown.less" />
-    <Content Include="metro-less\colors.less" />
-    <Content Include="metro-less\carousel.less" />
-    <Content Include="metro-less\calendar.less" />
-    <Content Include="metro-less\buttons.less" />
-    <Content Include="metro-less\breadcrumbs.less" />
-    <Content Include="metro-less\balloon.less" />
-    <Content Include="metro-less\accordion.less" />
+    <Content Include="Scripts\metro-js\metro.min.js" />
+    <Content Include="Scripts\metro-js\metro\metro-accordion.js" />
+    <Content Include="Scripts\metro-js\metro\metro-button-set.js" />
+    <Content Include="Scripts\metro-js\metro\metro-calendar.js" />
+    <Content Include="Scripts\metro-js\metro\metro-carousel.js" />
+    <Content Include="Scripts\metro-js\metro\metro-core.js" />
+    <Content Include="Scripts\metro-js\metro\metro-countdown.js" />
+    <Content Include="Scripts\metro-js\metro\metro-date-format.js" />
+    <Content Include="Scripts\metro-js\metro\metro-datepicker.js" />
+    <Content Include="Scripts\metro-js\metro\metro-dialog.js" />
+    <Content Include="Scripts\metro-js\metro\metro-drag-tile.js" />
+    <Content Include="Scripts\metro-js\metro\metro-dropdown.js" />
+    <Content Include="Scripts\metro-js\metro\metro-fluentmenu.js" />
+    <Content Include="Scripts\metro-js\metro\metro-global.js" />
+    <Content Include="Scripts\metro-js\metro\metro-hint.js" />
+    <Content Include="Scripts\metro-js\metro\metro-initiator.js" />
+    <Content Include="Scripts\metro-js\metro\metro-input-control.js" />
+    <Content Include="Scripts\metro-js\metro\metro-listview.js" />
+    <Content Include="Scripts\metro-js\metro\metro-live-tile.js" />
+    <Content Include="Scripts\metro-js\metro\metro-loader.js" />
+    <Content Include="Scripts\metro-js\metro\metro-locale.js" />
+    <Content Include="Scripts\metro-js\metro\metro-notify.js" />
+    <Content Include="Scripts\metro-js\metro\metro-panel.js" />
+    <Content Include="Scripts\metro-js\metro\metro-plugin-template.js" />
+    <Content Include="Scripts\metro-js\metro\metro-progressbar.js" />
+    <Content Include="Scripts\metro-js\metro\metro-pull.js" />
+    <Content Include="Scripts\metro-js\metro\metro-rating.js" />
+    <Content Include="Scripts\metro-js\metro\metro-scroll.js" />
+    <Content Include="Scripts\metro-js\metro\metro-slider.js" />
+    <Content Include="Scripts\metro-js\metro\metro-stepper.js" />
+    <Content Include="Scripts\metro-js\metro\metro-streamer.js" />
+    <Content Include="Scripts\metro-js\metro\metro-tab-control.js" />
+    <Content Include="Scripts\metro-js\metro\metro-table.js" />
+    <Content Include="Scripts\metro-js\metro\metro-tile-transform.js" />
+    <Content Include="Scripts\metro-js\metro\metro-times.js" />
+    <Content Include="Scripts\metro-js\metro\metro-touch-handler.js" />
+    <Content Include="Scripts\metro-js\metro\metro-treeview.js" />
+    <Content Include="Scripts\metro-js\metro\metro-wizard.js" />
+    <Content Include="Content\metro-less\wizard.less" />
+    <Content Include="Content\metro-less\window.less" />
+    <Content Include="Content\metro-less\variables.less" />
+    <Content Include="Content\metro-less\utils.less" />
+    <Content Include="Content\metro-less\typography.less" />
+    <Content Include="Content\metro-less\treeview.less" />
+    <Content Include="Content\metro-less\transform.less" />
+    <Content Include="Content\metro-less\tiles.less" />
+    <Content Include="Content\metro-less\tables.less" />
+    <Content Include="Content\metro-less\tab-control.less" />
+    <Content Include="Content\metro-less\streamer.less" />
+    <Content Include="Content\metro-less\stepper.less" />
+    <Content Include="Content\metro-less\slider.less" />
+    <Content Include="Content\metro-less\sidebar.less" />
+    <Content Include="Content\metro-less\scroll.less" />
+    <Content Include="Content\metro-less\reset.less" />
+    <Content Include="Content\metro-less\rating.less" />
+    <Content Include="Content\metro-less\progress-bar.less" />
+    <Content Include="Content\metro-less\panels.less" />
+    <Content Include="Content\metro-less\pagination.less" />
+    <Content Include="Content\metro-less\notify.less" />
+    <Content Include="Content\metro-less\notice.less" />
+    <Content Include="Content\metro-less\navigation-bar.less" />
+    <Content Include="Content\metro-less\misc.less" />
+    <Content Include="Content\metro-less\metro-bootstrap-responsive.less" />
+    <Content Include="Content\metro-less\metro-bootstrap.less" />
+    <Content Include="Content\metro-less\menus.less" />
+    <Content Include="Content\metro-less\lists.less" />
+    <Content Include="Content\metro-less\layout.less" />
+    <Content Include="Content\metro-less\images.less" />
+    <Content Include="Content\metro-less\icons.less" />
+    <Content Include="Content\metro-less\iconFont-content.less" />
+    <Content Include="Content\metro-less\iconFont.less" />
+    <Content Include="Content\metro-less\hint.less" />
+    <Content Include="Content\metro-less\grid.less" />
+    <Content Include="Content\metro-less\funcs.less" />
+    <Content Include="Content\metro-less\forms.less" />
+    <Content Include="Content\metro-less\fluent-menu.less" />
+    <Content Include="Content\metro-less\dataTables.less" />
+    <Content Include="Content\metro-less\countdown.less" />
+    <Content Include="Content\metro-less\colors.less" />
+    <Content Include="Content\metro-less\carousel.less" />
+    <Content Include="Content\metro-less\calendar.less" />
+    <Content Include="Content\metro-less\buttons.less" />
+    <Content Include="Content\metro-less\breadcrumbs.less" />
+    <Content Include="Content\metro-less\balloon.less" />
+    <Content Include="Content\metro-less\accordion.less" />
     <Content Include="fonts\metroSysIcons.woff" />
     <Content Include="fonts\metroSysIcons.ttf" />
     <Content Include="fonts\iconFont.woff" />
@@ -404,7 +426,9 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Silverlight.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

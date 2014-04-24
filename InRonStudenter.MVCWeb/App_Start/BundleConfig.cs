@@ -46,6 +46,9 @@ namespace InRonStudenter.MVCWeb
 
             bundles.Add(new StyleBundle("~/Googlefont/lato", "http://fonts.googleapis.com/css?family=Lato").Include());
 
+            bundles.Add(new StyleBundle("~/Content/bootstrap-css-cosmo").Include(
+                "~/Content/bootstrap-cosmo.min.css"
+                ));
             bundles.Add(new StyleBundle("~/Content/jquery-ui").Include(
                  "~/Content/themes/base/jquery-ui.css"
                 ));

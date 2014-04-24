@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("RonStudenter.ModelClass")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Ron Technologies, IN")]
 [assembly: AssemblyProduct("RonStudenter.ModelClass")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright ©  2014 - Ron Technologies, IN")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
