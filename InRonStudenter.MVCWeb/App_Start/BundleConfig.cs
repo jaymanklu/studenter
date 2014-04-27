@@ -38,6 +38,10 @@ namespace InRonStudenter.MVCWeb
             bundles.Add(new StyleBundle("~/Content/bootstrap-css-flatly").Include(
                       "~/Content/bootstrap-flatly.css"
                 ));
+
+            bundles.Add(new StyleBundle("~/Content/bootstrap-css-spacelab").Include(
+                    "~/Content/bootstrap-spacelab.min.css"
+                ));
             bundles.Add(new StyleBundle("~/Content/MetroUI-bootstrap").Include(
                 "~/metro-css/metro-bootstrap-responsive.min.css",
                 "~/metro-css/metro-bootstrap.min.css",

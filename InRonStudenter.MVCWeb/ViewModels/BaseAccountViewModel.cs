@@ -7,6 +7,6 @@ namespace InRonStudenter.MVCWeb.ViewModels
 {
     public class BaseAccountViewModel
     {
-
+        public AccountViewModel MyProperty { get; set; }
     }
 }

@@ -63,6 +63,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -72,33 +73,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EFContext\StashContext.cs" />
+    <Compile Include="EFContext\StashContextInitializer.cs" />
+    <Compile Include="EFContext\StudenterContext.cs" />
+    <Compile Include="EFContext\StudenterContextInitializer.cs" />
     <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Assignments.cs" />
     <Compile Include="Models\Event.cs" />
-    <Compile Include="Models\ExamResult.cs" />
-    <Compile Include="Models\ExtraCurricular.cs" />
+    <Compile Include="Models\Grade.cs" />
+    <Compile Include="Models\GradeExamGradeResult.cs" />
+    <Compile Include="Models\GradeExamMarksResult.cs" />
+    <Compile Include="Models\GradeLevelAssignments.cs" />
+    <Compile Include="Models\GradeSectionExamMarksResult.cs" />
+    <Compile Include="Models\SchoolAttributes.cs" />
+    <Compile Include="Models\SectionLevelAssignments.cs" />
+    <Compile Include="Models\StudentExamGradeResult.cs" />
+    <Compile Include="Models\StudentInformalTestGradeResult.cs" />
+    <Compile Include="Models\StudentInformalTestMarksResult.cs" />
+    <Compile Include="Models\StudentTestGradeResult.cs" />
+    <Compile Include="Models\StudentTestMarksResult.cs" />
+    <Compile Include="Models\StudentExtraCurricular.cs" />
     <Compile Include="Models\GradeSection.cs" />
+    <Compile Include="Models\GradeSubjects.cs" />
     <Compile Include="Models\NonTeachingFaculty.cs" />
     <Compile Include="Models\NullableDictionary.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Parent.cs" />
+    <Compile Include="Models\StudentExamMarksResult.cs" />
+    <Compile Include="Models\StudentGeneralGradeResult.cs" />
+    <Compile Include="Models\StudentGeneralMarksResult.cs" />
+    <Compile Include="Models\Subject.cs" />
     <Compile Include="Models\Teacher.cs" />
-    <Compile Include="Models\TestResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\TimeTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="StudentDatabase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="StudentDatabase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>StudentDatabase.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
@@ -116,6 +128,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\StashModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

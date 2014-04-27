@@ -14,6 +14,6 @@ namespace InRonStudenter.ModelLibrary
         public string Designation { get; set; }
         public string Department { get; set; }
         public Address Address{ get; set; }
-        public  MyProperty { get; set; }
+        public int MyProperty { get; set; }
     }
 }
