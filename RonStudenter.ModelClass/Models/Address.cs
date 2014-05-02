@@ -5,11 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using InRonStudenter.ModelLibrary;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace InRonStudenter.ModelLibrary
 {
+    //Address table in DBcontext. All addresses are stored here and one side link from person to address.
     public class Address
-    {   
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid AddressID { get; set; }
+
         [Required(ErrorMessage="Please enter the home address")]
         [Display(Name="Address")]
         [DataType(DataType.MultilineText)]

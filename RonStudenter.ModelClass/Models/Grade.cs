@@ -12,10 +12,10 @@ namespace InRonStudenter.ModelLibrary
         public Int32 GradeID { get; set; }
 
         [Display(Name = "Class / Grade Sections")]
-        public virtual IList<GradeSection> Sections { get; set; }
+        public virtual ICollection<GradeSection> Sections { get; set; }
 
         [Display(Name = "Class / Grade Projects")]
-        public virtual IList<Project> Projects { get; set; }
+        public virtual ICollection<Project> Projects { get; set; }
 
     }
 }

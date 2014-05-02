@@ -22,7 +22,7 @@ namespace InRonStudenter.ModelLibrary
         public IDictionary<Int16, Boolean> SubjectPassMatrix { get; set; }
 
         //Using schoolattributes for passing marks results and total marks
-        private virtual SchoolAttributes SchoolAttributesForPassingMarksAndTotalMarks { get; set; }
+        public virtual SchoolAttributes SchoolAttributesForPassingMarksAndTotalMarks { get; set; }
 
         //Filled by logic
         [Display(Name="Total Marks")]

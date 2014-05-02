@@ -27,7 +27,7 @@ namespace InRonStudenter.ModelLibrary
         public IDictionary<Int16, Boolean> Passed { get; set; }
 
         //Using schoolattributes for passing marks results and total marks
-        private virtual SchoolAttributes SchoolAttributesForPassingMarksAndTotalMarks { get; set; }
+        public virtual SchoolAttributes SchoolAttributesForPassingMarksAndTotalMarks { get; set; }
 
         [Display(Name="Total Marks for the test")]
         public IDictionary<Int16, float> TotalMarks { get; set; }

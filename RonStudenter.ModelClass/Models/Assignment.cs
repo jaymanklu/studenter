@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +9,21 @@ using System.Threading.Tasks;
 namespace InRonStudenter.ModelLibrary
 {
     //Parent class. DO NOT put to DBContext
-    public class Assignments
+    public class Assignment
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Int32 AssigmentID { get; set; }
+
+        public string Name { get; set; }
+
+
+        public string Description { get; set; }
+
         [Display(Name = "Students doing the Assignment")]
-        public virtual IList<Student> InvolvedStudents { get; set; }
+        public virtual ICollection<Student> InvolvedStudents { get; set; }
 
         [Display(Name = "Assignment Teachers")]
-        public virtual IList<Teacher> Teachers { get; set; }
+        public virtual ICollection<Teacher> Teachers { get; set; }
 
         [Required, Display(Name="Assignment Given Date"), DataType(DataType.DateTime)]
         public DateTime AssignedDate { get; set; }
@@ -23,12 +32,11 @@ namespace InRonStudenter.ModelLibrary
         public DateTime SubmitDate { get; set; }
 
         [Display(Name = "Students Submitted Assignments")]
-        public IDictionary<Int32, Boolean> SubmittedStudents { get; set; }
+        public virtual ICollection<BooleanTableStudentAssignmentSubmitted> SubmittedStudents { get; set; }
 
-        [Display(Name = "Marks Awarded")]
-        public IDictionary<Int32, float> MarksAwarded { get; set; }
+        public virtual Subject { get; set; }
 
         [Display(Name = "Grade Awarded")]
-        public IDictionary<Int32, String> GradeAwarded { get; set; }
+        public ICollection<AssignmentGradeAwarded> GradeAwarded { get; set; }
     }
 }

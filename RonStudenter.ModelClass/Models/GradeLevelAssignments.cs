@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace InRonStudenter.ModelLibrary
 {
     //Class level assignments. In DB Context
-    public class GradeLevelAssignments : Assignments
+    public class GradeLevelAssignments : Assignment
     {
         public Int32 GradeLevelAssignmentsID { get; set; }
 

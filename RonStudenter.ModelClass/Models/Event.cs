@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Spatial;
 using System.Linq;
 using System.Text;
@@ -10,10 +11,11 @@ namespace InRonStudenter.ModelLibrary
 {
     public class Event
     {
-        public int EventID { get; set; }
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid EventID { get; set; }
 
         [Display(Name="Event Photo")]
-        public byte[] Photo { get; set; }
+        public string Photo { get; set; }
 
         [Required(ErrorMessage="Please enter an event name"), Display(Name="Event Name")]
         public string Name { get; set; }
@@ -30,23 +32,25 @@ namespace InRonStudenter.ModelLibrary
         [DataType(DataType.DateTime), Required(ErrorMessage="Please enter the time of event"), Display(Name="Event Date and Time")]
         public DateTime Time { get; set; }
 
-        [Required(ErrorMessage="Please enter where it is happening so that people may find the event to attend"), Display(Name="Event Location")]
-        public string Location { get; set; }
+        public Guid AddressID { get; set; }
+
+        [Required(ErrorMessage="Please enter where it is happening so that people may find the event to attend"), Display(Name="Event Location"), ForeignKey("AddressID")]
+        public virtual Address Address { get; set; }
 
         //Experimental for now dunno implementation
         [Display(Name="Event Location")]
-        public DbGeography Location { get; set; }
+        public DbGeography LocationLatLong { get; set; }
 
         [Display(Name="Attending Teachers")]
-        public IList<Teacher> AttendingTeachers { get; set; }
+        public ICollection<Teacher> AttendingTeachers { get; set; }
 
         [Display(Name = "Attending Students")]
-        public IList<Student> AttendingStudents { get; set; }
+        public ICollection<Student> AttendingStudents { get; set; }
 
         [Display(Name = "Attending Parents")]
-        public IList<Parent> AttendingParents { get; set; }
+        public ICollection<Parent> AttendingParents { get; set; }
 
         [Display(Name = "Attending Non Teaching Faculty")]
-        public IList<NonTeachingFaculty> AttendingNonTeachingFaculty { get; set; }
+        public ICollection<NonTeachingFaculty> AttendingNonTeachingFaculty { get; set; }
     }
 }
