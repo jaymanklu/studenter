@@ -9,5 +9,6 @@ namespace InRonStudenter.ModelLibrary.EFContext
 {
     public class StudenterContext : DbContext
     {
+        public DbSet<Address> Addresses { get; set; }
     }
 }

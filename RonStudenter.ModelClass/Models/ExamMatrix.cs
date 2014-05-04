@@ -16,10 +16,7 @@ namespace InRonStudenter.ModelLibrary
         public float? MarksEarned { get; set; }
 
         [Display(Name = "Grade Earned")]
-        public String? Grade { get; set; }
-
-        [Required(ErrorMessage = "Please specify the total marks"), Display(Name = "Total Marks")]
-        public float? TotalMarks { get; set; }
+        public string Grade { get; set; }
 
         public string StudentID { get; set; }
 
@@ -30,5 +27,10 @@ namespace InRonStudenter.ModelLibrary
 
         [ForeignKey("ExamID")]
         public virtual Exam Exam { get; set; }
+
+        [ForeignKey("SubjectID")]
+        public virtual Subject Subject { get; set; }
+
+        public string SubjectID { get; set; }
     }
 }

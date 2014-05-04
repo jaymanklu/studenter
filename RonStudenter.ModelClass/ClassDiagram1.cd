@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InRonStudenter.ModelLibrary.EFContext.StashContext" Collapsed="true">
+    <Position X="17.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EFContext\StashContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.EFContext.StashContextInitializer" Collapsed="true">
+    <Position X="19" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EFContext\StashContextInitializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.EFContext.StudenterContext" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EFContext\StudenterContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.EFContext.StudenterContextInitializer" Collapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EFContext\StudenterContextInitializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Migrations.Configuration" Collapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Migrations\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Address" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAABACACAAAAAAAAAAAACAAAIAAAAAAAAABQAAABA=</HashCode>
+      <FileName>Models\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Assignment" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABBAAAgAAAAAIAAAAQAAAAAAAAACAAAEgRAAAA=</HashCode>
+      <FileName>Models\Assignment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.AssignmentGradeAwarded" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAADAACAAACACA=</HashCode>
+      <FileName>Models\AssignmentGradeAwarded.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.AttendanceMatrix" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAUAAAAAAAAJEAAAAAAAAAAAAAAAAAAIASAAA=</HashCode>
+      <FileName>Models\AttendanceMatrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.AttendanceSatisfied" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAUBAAAAAAAIAAAAAAAAAAAAAAAAAAAIASQAA=</HashCode>
+      <FileName>Models\AttendanceSatisfied.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.BooleanTableStudentAssignmentSubmitted" Collapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAgAAAAAAAAAQAAAAAAAAAABAAAAAgCAAA=</HashCode>
+      <FileName>Models\BooleanTableStudentAssignmentSubmitted.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Event" Collapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QiAAAAAAAAABACAAAAAAAAQAQAAACAACAAAACRAAAQg=</HashCode>
+      <FileName>Models\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Exam" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAAAEAAAAAAAEAICAAAAAQAAARAAAAAAAAAAsCQAAA=</HashCode>
+      <FileName>Models\Exam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.ExamMatrix" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAUAAAAAAAAIAAAAAAAAAAAABAAAAAAAGTAAA=</HashCode>
+      <FileName>Models\ExamMatrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.ExamTimeTable" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAACAIAAAAAAAAAAAABAAAQAAACAAAA=</HashCode>
+      <FileName>Models\ExamTimeTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.ExamTotalMarksMatrix" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIAAAAAAAIAAAAAAAAQAAABAAAAAAACAAAA=</HashCode>
+      <FileName>Models\ExamTotalMarksMatrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Grade" Collapsed="true">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABAAAQA=</HashCode>
+      <FileName>Models\Grade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.GradeLevelAssignments" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\GradeLevelAssignments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.GradeSection" Collapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAAAAgAAAkAAAAgAABAAwAAgBAEAAAAAAEAgAgAQA=</HashCode>
+      <FileName>Models\GradeSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.GradeSubjects" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAkAAAAAAAEAAAAAAACAAAAAgAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\GradeSubjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.MonthlyTest" Collapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAABEAAAAAAAEAICAAAAAQAAAQAAAAAAAAgAMAQABA=</HashCode>
+      <FileName>Models\MonthlyTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.MonthlyTestMatrix" Collapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAUAAAAAAAAIAAAAAAAAQAAAAAAAAACAESABA=</HashCode>
+      <FileName>Models\MonthlyTestMatrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.MonthlyTestTimeTable" Collapsed="true">
+    <Position X="19" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAQIAAAAAAAAAAAAAAAAQACAAAABA=</HashCode>
+      <FileName>Models\MonthlyTestTimeTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.MonthlyTestTotalMarksMatrix" Collapsed="true">
+    <Position X="20.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAEAAAAAAAAIAAAAAAAAQAAAAAAAAAIAAAABA=</HashCode>
+      <FileName>Models\MonthlyTestTotalMarksMatrix .cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.NonTeachingFaculty" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAACAAAAAAAAQAEAAAAgACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\NonTeachingFaculty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Parent" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAABAAAAAAAAAAAAAAACQAAAgAAAACAQAAgAAAAAA=</HashCode>
+      <FileName>Models\Parent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Project" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.SchoolAttributes" Collapsed="true">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SchoolAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.SectionLevelAssignments" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\SectionLevelAssignments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Student" Collapsed="true">
+    <Position X="20.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAIAQAAAAgAABCAAAAAIAaAAA=</HashCode>
+      <FileName>Models\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.StudentExtraCurricular" Collapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\StudentExtraCurricular.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Subject" Collapsed="true">
+    <Position X="19" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Subject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.SurpriseTest" Collapsed="true">
+    <Position X="20.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAABAAAEAAAgAAIAIAAAAQAAAQAAEAAAAIAAMAQAAA=</HashCode>
+      <FileName>Models\SurpriseTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.SurpriseTestMatrix" Collapsed="true">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAIACAESAAA=</HashCode>
+      <FileName>Models\SurpriseTestMatrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.Teacher" Collapsed="true">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Teacher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.TimeTable" Collapsed="true">
+    <Position X="13.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAACAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\TimeTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.GradeExamGradeResult" Collapsed="true">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\GradeExamGradeResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.GradeExamMarksResult" Collapsed="true">
+    <Position X="20.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAIAAAAAAAAAIAAAAAAEAAAAAEAAAg=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\GradeExamMarksResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.GradeSectionExamMarksResult" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\GradeSectionExamMarksResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.StudentExamGradeResult" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\StudentExamGradeResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.StudentExamMarksResult" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\StudentExamMarksResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.StudentGeneralGradeResult" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAQAAAABAAAAAAQAAIAAQAAAAAAQAAAAAQIAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\StudentGeneralGradeResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.StudentGeneralMarksResult" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBAAAAQAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAQIAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\StudentGeneralMarksResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.StudentInformalTestGradeResult" Collapsed="true">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggAAAAQABAAAAAAAAAAAAAAAQAAEAAAAQAAAEAAAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\StudentInformalTestGradeResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.StudentInformalTestMarksResult" Collapsed="true">
+    <Position X="17.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAQAAAAACAAAAAAAAAAAQAAEAABAQAAAAAAAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\StudentInformalTestMarksResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.StudentTestGradeResult" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\StudentTestGradeResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InRonStudenter.ModelLibrary.OldFramework.StudentTestMarksResult" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\OLDFRAMEWORK\StudentTestMarksResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="InRonStudenter.ModelLibrary.ParentRelation" Collapsed="true">
+    <Position X="10.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Parent.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

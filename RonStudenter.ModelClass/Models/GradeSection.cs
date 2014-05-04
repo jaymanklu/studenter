@@ -57,6 +57,9 @@ namespace InRonStudenter.ModelLibrary
 
         [Display(Name = "Minimum Attendance Satisfied")]
         public ICollection<AttendanceSatisfied> SatisfiedBook { get; set; }
+
+        [Display(Name = "Assignments to this section")]
+        public virtual ICollection<SectionLevelAssignments> Assignments { get; set; }
         
 
     }

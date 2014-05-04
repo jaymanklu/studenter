@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InRonStudenter.ModelLibrary
+namespace InRonStudenter.ModelLibrary.OldFramework
 {
-    //This class is for a class / grade's total results, basically collection. DB context will have no controller generated for this
+    //DO NOT USE - NOT IN DB CONTEXT
     public class GradeExamMarksResult
     {
         public Int32 GradeExamMarksResultID { get; set; }

@@ -14,7 +14,7 @@ namespace InRonStudenter.ModelLibrary
         public Int32 ExamID { get; set; }
 
         [Required(ErrorMessage = "Specify a name to this Exam"), Display(Name = "Name")]
-        public String Name { get; set; }
+        public string Name { get; set; }
 
         [Required(ErrorMessage = "Please Specify Start Date of the Exam"), DataType(DataType.DateTime), Display(Name = "Start Date and Time of the Test")]
         public DateTime StartDateAndTime { get; set; }
@@ -33,8 +33,29 @@ namespace InRonStudenter.ModelLibrary
         [Required(ErrorMessage = "Please enter the teachers handling exams"), Display(Name = "Exam Teachers")]
         public virtual ICollection<Teacher> Teachers { get; set; }
 
+        [Display(Name="Marks Students Earned")]
         public virtual ICollection<ExamMatrix> MarksStudentsEarned { get; set; }
 
-        public virtual ICollection<ExamTimeTable> ExamTimeTable { get; set; }
+        [Display(Name="Total Marks")]
+        public virtual ICollection<ExamTotalMarksMatrix> TotalMarks { get; set; }
+
+        public virtual ICollection<ExamTimeTable> TimeTable { get; set; }
+
+        public virtual ICollection<ExamStudentAggregation> StudentAggregation { get; set; }
+
+        [ForeignKey("CurrentSectionID")]
+        public virtual SectionSubjectTeaching CurrentSection { get; set; }
+
+        public Guid CurrentSectionID { get; set; }
+
+        [Display(Name = "Passed Student Number")]
+        public Int32? PassedStudentNumber { get; set; }
+
+        [Display(Name = "Failed Student Number")]
+        public Int32? FailedStudentNumber { get; set; }
+
+        [Display(Name = "Pass Percentage")]
+        public float? PassPercentage { get; set; }
+
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using InRonStudenter.ModelLibrary;
 
-namespace InRonStudenter.ModelLibrary
+namespace InRonStudenter.ModelLibrary.OldFramework
 {
-    // A Grade sections exam result. In DB context
+    // //DO NOT USE - NOT IN DB CONTEXT
     public class GradeSectionExamMarksResult
     {
         public Int32 GradeSectionExamMarksResultID { get; set; }

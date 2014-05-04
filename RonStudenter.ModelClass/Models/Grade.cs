@@ -17,5 +17,11 @@ namespace InRonStudenter.ModelLibrary
         [Display(Name = "Class / Grade Projects")]
         public virtual ICollection<Project> Projects { get; set; }
 
+        [Display(Name = "Assignments given to this grade")]
+        public virtual ICollection<GradeLevelAssignments> Assignments { get; set; }
+
+        [Display(Name = "Grade level Extra Curricular")]
+        public virtual ICollection<StudentExtraCurricular> ExtraCurricular { get; set; }
+
     }
 }

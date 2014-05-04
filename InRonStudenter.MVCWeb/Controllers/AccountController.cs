@@ -30,7 +30,7 @@ namespace InRonStudenter.MVCWeb.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
-        public PartialViewResult Login(string returnUrl)
+        public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
             return View();

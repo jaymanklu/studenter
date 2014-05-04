@@ -14,9 +14,10 @@ namespace InRonStudenter.ModelLibrary
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Int32 AssigmentID { get; set; }
 
+        [Display(Name="Assignment Name"), Required(ErrorMessage="Please enter an assignment name")]
         public string Name { get; set; }
 
-
+        [Display(Name="Assignment Description")]
         public string Description { get; set; }
 
         [Display(Name = "Students doing the Assignment")]
@@ -34,7 +35,7 @@ namespace InRonStudenter.ModelLibrary
         [Display(Name = "Students Submitted Assignments")]
         public virtual ICollection<BooleanTableStudentAssignmentSubmitted> SubmittedStudents { get; set; }
 
-        public virtual Subject { get; set; }
+        public virtual Subject Subject { get; set; }
 
         [Display(Name = "Grade Awarded")]
         public ICollection<AssignmentGradeAwarded> GradeAwarded { get; set; }

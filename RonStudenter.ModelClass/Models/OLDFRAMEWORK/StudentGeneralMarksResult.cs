@@ -5,9 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 
-namespace InRonStudenter.ModelLibrary
+namespace InRonStudenter.ModelLibrary.OldFramework
 {
-    //General Template for test / exam or any other exam. Derive from this. NOT in DBcontext
+    //DO NOT USE - NOT IN DB CONTEXT
     public class StudentGeneralMarksResult
     {
 

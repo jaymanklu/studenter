@@ -17,7 +17,7 @@ namespace InRonStudenter.ModelLibrary
         public float? MarksEarned { get; set; }
 
         [Display(Name = "Grade Earned")]
-        public String? Grade { get; set; }
+        public string Grade { get; set; }
 
         public string StudentID { get; set; }
 

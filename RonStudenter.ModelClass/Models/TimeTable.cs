@@ -12,13 +12,13 @@ namespace InRonStudenter.ModelLibrary
     public class TimeTable
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Display(Name="Time Table ID")]
-        public Int16 TimeTableID { get; set; }
+        public Guid TimeTableID { get; set; }
 
-        [Display(Name = "Section")]
+        [ForeignKey("SectionID")]
         public virtual GradeSection GradeSection { get; set; }
 
-        //To be filled by controller
-        [Required, Display(Name="Time Table")]
-        public IDictionary<IDictionary<String, String>, IDictionary<String, String>> TimeTableMatrix { get; set; }
+        public Int32 SectionID { get; set; }
+
+        public virtual ICollection<TimeTableMatrix> TimeTableInfo { get; set; }
     }
 }

@@ -5,9 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 
-namespace InRonStudenter.ModelLibrary
+namespace InRonStudenter.ModelLibrary.OldFramework
 {
-    //General Template for test / exam or any other exam. Derive from this. NOT in DBcontext
+    //DONT USE - NOT IN DB CONTEXT
     public class StudentGeneralGradeResult
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -27,7 +27,7 @@ namespace InRonStudenter.ModelLibrary
         public IDictionary<Int16, Boolean> SubjectPassMatrix { get; set; }
 
         //Using schoolattributes for passing marks and total marks results
-        private virtual SchoolAttributes SchoolAttributesForPassingAndTotalMarks { get; set; }
+        public virtual SchoolAttributes SchoolAttributesForPassingAndTotalMarks { get; set; }
 
         //Filled by logic
         [Display(Name="Total Marks")]

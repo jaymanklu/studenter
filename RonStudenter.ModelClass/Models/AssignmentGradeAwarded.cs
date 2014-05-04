@@ -25,7 +25,7 @@ namespace InRonStudenter.ModelLibrary
         public virtual Assignment Assignment { get; set; }
 
         [Display(Name = "Grade Awarded")]
-        public string? GradeAwarded { get; set; }
+        public string GradeAwarded { get; set; }
 
         [Display(Name = "Marks Awarded")]
         public float? MarksAwarded { get; set; }

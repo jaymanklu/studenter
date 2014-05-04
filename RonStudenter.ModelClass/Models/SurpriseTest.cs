@@ -29,6 +29,9 @@ namespace InRonStudenter.ModelLibrary
         [Required(ErrorMessage = "Please specify the total marks"), Display(Name = "Total Marks")]
         public float? TotalMarks { get; set; }
 
+        [Display(Name="Passing Marks")]
+        public float? PassingMarks { get; set; }
+
         public string SubjectID { get; set; }
 
         [ForeignKey("SubjectID"), Required(ErrorMessage="Please enter the subject on which test was given"), Display(Name="Subject")]
@@ -38,5 +41,20 @@ namespace InRonStudenter.ModelLibrary
         public virtual ICollection<Teacher> TestTeacher { get; set; }
 
         public virtual ICollection<SurpriseTestMatrix> MarksStudentsEarned { get; set; }
+
+        [ForeignKey("CurrentSectionID")]
+        public virtual SectionSubjectTeaching CurrentSection { get; set; }
+
+        public Guid CurrentSectionID { get; set; }
+
+        [Display(Name="Passed Student Number")]
+        public Int32? PassedStudentNumber { get; set; }
+
+        [Display(Name = "Failed Student Number")]
+        public Int32? FailedStudentNumber { get; set; }
+
+        [Display(Name="Pass Percentage")]
+        public float? PassPercentage { get; set; }
+
     }
 }

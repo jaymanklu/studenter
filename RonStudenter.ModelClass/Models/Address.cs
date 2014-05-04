@@ -12,7 +12,7 @@ namespace InRonStudenter.ModelLibrary
     //Address table in DBcontext. All addresses are stored here and one side link from person to address.
     public class Address
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public Guid AddressID { get; set; }
 
         [Required(ErrorMessage="Please enter the home address")]
@@ -45,7 +45,7 @@ namespace InRonStudenter.ModelLibrary
         [DataType(DataType.PhoneNumber)]
         public String ContactNumber { get; set; }
 
-        [DataType(DataType.EmailAddress), Display(Name="Email Address"), Display(Name="Email")]
+        [DataType(DataType.EmailAddress), Display(Name="Email Address")]
         public String Email { get; set; }
     }
 }

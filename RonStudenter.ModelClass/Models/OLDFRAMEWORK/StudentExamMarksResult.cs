@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace InRonStudenter.ModelLibrary
+namespace InRonStudenter.ModelLibrary.OldFramework
 {
-    public class StudentTestGradeResult : StudentGeneralGradeResult
+    ////DO NOT USE - NOT IN DB CONTEXT
+    public class StudentExamMarksResult : StudentGeneralMarksResult
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private Int32 StudentTestMarksResultID { get; set; }
+        private Int32 StudentExamMarksResultID { get; set; }
     }
 }

@@ -36,7 +36,27 @@ namespace InRonStudenter.ModelLibrary
         [Display(Name="Test Marks")]
         public virtual ICollection<MonthlyTestMatrix> MarksStudentsEarned { get; set; }
 
+        [Display(Name="Total Marks")]
+        public virtual ICollection<MonthlyTestTotalMarksMatrix> TotalMarks { get; set; }
+
         [Display(Name="Test Timetable")]
         public virtual ICollection<MonthlyTestTimeTable> TestTimeTable { get; set; }
+
+        [Display(Name = "Student Marks Aggregation")]
+        public virtual ICollection<MonthlyTestStudentAggregation> Aggregation { get; set; }
+
+        [ForeignKey("CurrentSectionID")]
+        public virtual SectionSubjectTeaching CurrentSection { get; set; }
+
+        public Guid CurrentSectionID { get; set; }
+
+        [Display(Name = "Passed Student Number")]
+        public Int32? PassedStudentNumber { get; set; }
+
+        [Display(Name = "Failed Student Number")]
+        public Int32? FailedStudentNumber { get; set; }
+
+        [Display(Name = "Pass Percentage")]
+        public float? PassPercentage { get; set; }
     }
 }
