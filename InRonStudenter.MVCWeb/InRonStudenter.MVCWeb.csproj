@@ -219,13 +219,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201405111619168_FirstMigration.cs" />
+    <Compile Include="Migrations\201405111619168_FirstMigration.Designer.cs">
+      <DependentUpon>201405111619168_FirstMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\AppDBConfiguration.cs" />
+    <Compile Include="Migrations\StudenterConfiguration.cs" />
+    <Compile Include="Migrations\StashConfiguration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\StashContext.cs" />
+    <Compile Include="Models\StashContextInitializer.cs" />
     <Compile Include="Models\StudenterContext.cs" />
     <Compile Include="Models\StudenterContextInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\BaseAccountViewModel.cs" />
+    <Compile Include="ViewModels\StudentEntityViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\InRonStudenter.Silverlight.xap" />
@@ -478,6 +488,11 @@
       <Project>{d024599e-d35a-4571-b61a-f90b5481e354}</Project>
       <Name>InRonStudenter.ModelClass</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201405111619168_FirstMigration.resx">
+      <DependentUpon>201405111619168_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

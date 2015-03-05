@@ -15,7 +15,7 @@ namespace InRonStudenter.ModelLibrary
         //More attributes will be put and polled out from here
     }
 
-    enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
-    enum ClassTimes { }
-    enum Breaktimes { }
+    public enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
+    public enum ClassTimes { }
+    public enum Breaktimes { }
 }

@@ -8,7 +8,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using InRonStudenter.ModelLibrary;
-using InRonStudenter.ModelLibrary.EFContext;
+using InRonStudenter.MVCWeb.Models;
+
 
 namespace InRonStudenter.MVCWeb.Controllers
 {

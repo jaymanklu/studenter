@@ -73,11 +73,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EFContext\StashContext.cs" />
-    <Compile Include="EFContext\StashContextInitializer.cs" />
-    <Compile Include="EFContext\StudenterContext.cs" />
-    <Compile Include="EFContext\StudenterContextInitializer.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\AssignmentGradeAwarded.cs" />
     <Compile Include="Models\Assignment.cs" />
